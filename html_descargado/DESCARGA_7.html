@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="Keywords" content="Subastas">
+    <meta name="Description" content="Portal de Subastas de la Agencia Estatal Bolet&iacute;n Oficial del Estado">
+    <link rel="stylesheet" href="/estilos/subastas.css" title="comun" type="text/css">
+    <link rel="stylesheet" href="/estilos/buscar.css" title="comun" type="text/css" >
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+  </head>
+  <body>
+    <!-- Cabecera -->
+    <div id="cabecera">
+      <!-- Accesibilidad -->
+      <h1 class="fuera">Portal de Subastas de la Agencia Estatal Bolet&iacute;n Oficial del Estado</h1>
+      <a name="top"></a>
+      <ul class="fuera">
+        <li><a accesskey="c" href="#contenido">Ir a contenido</a></li>
+      </ul>
+      <!-- Comienza la franja blanca con logos y enlaces a la derecha -->
+      <div id="logoInicio">
+        <a href="http://www.mpr.es/" title="Ir al Ministerio de la Presidencia"><img src="/imagenes/logoMPR.png" alt="Ministerio de la Presidencia"></a>
+        <a href="/" title="Ir a la p&aacute;gina de inicio"><img src="/imagenes/logo_subastas_2_portal.png" alt="Portal de Subastas"></a>
+        <a href="http://www.boe.es" title="Ir a la p&aacute;gina de la Agencia Estatal Bolet&iacute;n Oficial del Estado"><img src="/imagenes/logo_subastas_2_boe.png" alt="Agencia Estatal Bolet&iacute;n Oficial del Estado"></a>
+      </div><!-- Fin de logoInicio -->      <!-- FRAG_MENU -->
+      <!-- Comienza la franja azul, Inicio e informacion sobre conexion -->
+      <div id="menu_principal">
+        <ul>
+          <li><a href="https://subastas.boe.es/index.php"  title="P&aacute;gina de inicio">Inicio</a></li>
+          <li><a href="https://subastas.boe.es/subastas_ava.php" class="current"><span class="botonBuscar">Buscar</span></a></li>
+          <li><a href="https://subastas.boe.es/ayuda.php"  title="P&aacute;ginas de ayuda">Ayuda</a></li>
+          <li><span id="fechaOficial">S&aacute;bado, 17 de noviembre de 2018</span> <span id="horaOficial">00:06:24</span><span id="usoHorario" title="Hora Central Europea / Central European Time">CET</span></li>
+          <li><a href="https://subastas.boe.es/acceso.php" ><span class="botonAcceso">Iniciar sesi&oacute;n/Registrarse <strong class="luz"><img class="callout" src="/imagenes/botonAcceso_callout_black.gif" alt="" />Pulse para acceder o registrarse como usuario en el Portal de Subastas</strong></span></a></li> 
+        </ul>
+        <div class="espacio"></div>
+        <script type="text/JavaScript">
+          var hoy = new Date(2018,11-1,17,00,06,24); 
+          function reloj(){
+            var hora = hoy.getHours(); 
+            var minutos = hoy.getMinutes(); 
+            var segundos = hoy.getSeconds(); 
+            if (hora<=9) hora = "0" + hora; 
+            if (minutos<=9) minutos = "0" + minutos; 
+            if (segundos<=9) segundos = "0" + segundos; 
+            var horaFinal = hora + ":" + minutos + ":" + segundos; 
+
+            var dia = new Array('Domingo','Lunes','Martes','Mi&#xe9;rcoles','Jueves','Viernes','S&#xe1;bado'); 
+            var mes = new Array('Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'); 
+            var anio = hoy.getFullYear(); 
+            var fecha = dia[hoy.getDay()] + ', ' + hoy.getDate() + ' de '  + mes[hoy.getMonth()] + ' de ' + anio ; 
+
+            document.getElementById('fechaOficial').innerHTML = fecha;
+            document.getElementById('horaOficial').innerHTML = horaFinal;
+
+            hoy.setSeconds(hoy.getSeconds() +1);
+            setTimeout('reloj()',1000);
+          } 
+          reloj();
+        </script>
+      </div><!-- #menu_principal -->
+      <div class="espacio"></div>
+      <hr class="oculto">
+      <div class="espacio"></div>
+    </div> <!-- #cabecera -->
+    <div id="contenedor">
+      <div id="l-cuerpo">
+        <div id="l-unaColumna">
+      <!-- /FRAG_MENU -->
+      <!-- FRAG_APLI -->
+          <div id="l-contenido">
+            <a name="contenido"></a>
+      <!-- / FRAG_APLI -->
+            <!-- *********************Comienza la aplicacion************************ -->
+<h2>Subastas. B�squeda avanzada</h2>
+<div class="pretexto">
+    <ul class="navlist">
+        <li><a href="./subastas_ava.php?accion=&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1400-200" >B�squeda</a></li>
+        <li><a href="./subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1400-200" class="current">Resultados</a></li>
+        <li><a href="./subastas_ava.php?accion=Fav&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1400-200" class="guardar">Guardar b�squeda <img src="/imagenes/a_la_carta/iconHAlacarta.png" alt="BOE a la carta activo"/></a></li>
+    </ul>
+</div>
+<div class="espacio"></div>
+
+<div class="paginar">
+  <ul>
+    <li>Resultados 1401 a 1427 de 1427</li>
+    <li>
+      <a href="subastas_ava.php">
+        <span class="consulNueva">Nueva b&#xFA;squeda</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- .paginar -->
+<div class="paginar2">
+  <ul>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1200-200">
+        <span class="pagAnt"><abbr title="P&#xE1;gina">P&#xE1;g.</abbr> anterior</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-0-200">
+        <span class="pagAntxxx">1</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-200-200">
+        <span class="pagAntxxx">2</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-400-200">
+        <span class="pagAntxxx">3</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-600-200">
+        <span class="pagAntxxx">4</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-800-200">
+        <span class="pagAntxxx">5</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1000-200">
+        <span class="pagAntxxx">6</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1200-200">
+        <span class="pagAntxxx">7</span>
+      </a>
+    </li>
+    <li>
+      <span class="fuera">Est&#xE1; usted en la p&#xE1;gina de resultados n&#xFA;mero </span>
+      <span class="current">8</span>
+    </li>
+  </ul>
+</div>
+<!-- .paginar -->
+<div class="listadoResult">
+  <ul>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-2075</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 4 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0044/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 31/01/2016 a las 01:06:19] 
+                  </p>
+      <p class="documento">LOCAL COMERCIAL EN DOS NIVELES EN EDIFICIO SOBRE PARCELAS 1,14,15 Y 16 DEL PLAN PARCIAL DE CORDEDO.</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-2075&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-2075"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-2075&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-2075">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1955
+                    (2 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 12 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0361/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 31/01/2016 a las 02:54:06] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: T&#xC9;RMINO MUNICIPAL DE A CORU&#xD1;A. PISO CUARTO IZQUIERDA Lote 2: TERMINO MUNICIPAL DE A CORU&#xD1;A, MODULO O LOCAL PARA NAVE INDUSTRIAL N&#xDA;M.4</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1955&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1955"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1955&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1955">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-878</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 4 - BETANZOS</p>
+      <p class="epigrafeDpto">
+                Expediente: 0027/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 28/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">FINCA URBANA SITA EN LAS TRAVIESAS N&#xBA;3, MONFERO.260 METROS CUADRADOS</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-878&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-878"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-878&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-878">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-2018
+                    (14 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0420/11</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 25/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: CENTRALITA Lote 2: DESFIBRILADOR Lote 3: CEC&#xD3;GRAFO TOSHIBA Lote 4: ELECTROCARDI&#xD3;GRAFO Lote 5: ELECTROCARDI&#xD3;GRAFO DELTA 60 Lote 6: FAX Lote 7: IMPRESORA Lote 8: ORDENADOR SCANER IMPRESORA Lote 9: ORDENADOR MC INTOSEN Lote 10: ORDENADOR SONI VAIO Lote 11: PLACAS Y L&#xCD;QUIDOS Lote 12: PROTECCI&#xD3;N DE DATOS Lote 13: REPUESTOS REFLOTR&#xD3;N Lote 14: VENDAJES Y CURAS</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-2018&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-2018"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-2018&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-2018">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1836</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 2 - BETANZOS</p>
+      <p class="epigrafeDpto">
+                Expediente: 0048/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 25/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">Nave industrial de forma rectangular , cuya estructura es totalmente prefabricada a base de pilares</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1836&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1836"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1836&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1836">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-825</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 4 - BETANZOS</p>
+      <p class="epigrafeDpto">
+                Expediente: 0219/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 25/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">MUNICIPIO DE IRIXOA (A CORU&#xD1;A), PARROQUIA DE AMBROA:Vivienda unifamiliar en Casal do Mouro n&#xBA;10.</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-825&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-825"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-825&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-825">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1849
+                    (4 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0536/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 25/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: Finca de Culleredo N&#xBA; 37879 del Registro de la Propiedad de La Coru&#xF1;a N&#xBA; 3 Lote 2: Finca de La Coru&#xF1;a N&#xBA; 63395 del Registro de la Propiedad de La Coru&#xF1;a N&#xBA; 2 Lote 3: Finca de La Coru&#xF1;a N&#xBA; 87879 del Registro de la Propiedad de La Coru&#xF1;a N&#xBA; 2 Lote 4: Derechos de cr&#xE9;dito (deuda de clientes)</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1849&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1849"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1849&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1849">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-941</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 4 - BETANZOS</p>
+      <p class="epigrafeDpto">
+                Expediente: 0139/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 25/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">FINCA PLANTA BAJA DESTINADA A USO COMERCIALES, 103 METROS CUADRADOS, UTILES 51,50 METROS APROX.</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-941&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-941"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-941&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-941">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1489</p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0323/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 20/01/2016 a las 00:52:35] 
+                  </p>
+      <p class="documento">Finca del Registro de la Propiedad de La Coru&#xF1;a n&#xFA;mero 17.574</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1489&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1489"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1489&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1489">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1485</p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0397/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 18/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">Parcela ER2 n&#xBA; 4   SUNP   14   TRAS PAXONAL, de Santiago de Compostela</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1485&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1485"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1485&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1485">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1484</p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0125/12</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 12/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">48 Participaciones sociales</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1484&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1484"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1484&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1484">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1649</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 12 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0148/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 10/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">LOCAL COMERCIAL SITO EN C/ RAM&#xD3;N Y CAJAL, A CORU&#xD1;A</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1649&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1649"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1649&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1649">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1846</p>
+      <p class="epigrafeDpto">JUZGADO SOCIAL 3 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0073/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 10/01/2016 a las 02:29:25] 
+                  </p>
+      <p class="documento">unico lote de tres pendientes realizados en oro amarillo de 18K</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1846&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1846"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1846&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1846">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1742</p>
+      <p class="epigrafeDpto">AUDIENCIA PROV. SECC. 6 SANTIAGO DE COMPOSTELA SED - SANTIAGO DE COMPOSTELA</p>
+      <p class="epigrafeDpto">
+                Expediente: 0016/11</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 08/01/2016 a las 02:38:51] 
+                  </p>
+      <p class="documento">veh&#xED;culo AUDI A3, matr&#xED;cula 2768-CBJ, con n&#xFA;mero de bastidor WAUZZZ8L831206906</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1742&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1742"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1742&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1742">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1492</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 12 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0038/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">VIVIENDA FAMILIAR TIPO CHALET EN URBANIZACION ICARIA, EN OLEIROS, A CORU&#xD1;A</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1492&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1492"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1492&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1492">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-1488
+                    (2 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 12 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0347/12</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 06/01/2016 a las 00:00:00] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: PISO 4&#xBA; C/ ORILLAMAR 12, A CORU&#xD1;A Lote 2: LOCAL COMERCIAL. PLANTA BAJA ALA IZQUIERDA, C/ ORILLAMAR 8, A CORU&#xD1;A</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1488&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-1488"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-1488&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-1488">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1368</p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 2 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0026/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Concluida
+                  - [Fecha de conclusi&#xF3;n: 06/01/2016 a las 00:47:43] 
+                  </p>
+      <p class="documento">Labrad&#xED;o a prado y secano llamado GANDARUFAS, en el Municipio de Cerceda, Parroquia de Meirama</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1368&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1368"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1368&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1368">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-1011
+                    (7 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 2 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0004/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 28/12/2015 a las 00:00:00] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: MARCAS, MODELOS Y DISE&#xD1;OS INDUSTRIALES Lote 2: MOBILIARIO Lote 3: EQUIPOS PARA PROCESO DE INFORMACION Lote 4: Local en planta baja sito en la calle Falperra n&#xBA; 7 de A Coru&#xF1;a. Lote 5: PARTICIPACI&#xD3;N EN ADQUISICIONES Y ARRENDAMENTOS REUNIDOS, S.L. Lote 6: PARTICIPACI&#xD3;N EN A-CERO PARTICIPACIONES INMOBILIARIAS, S.L.U. Lote 7: PARTICIPACI&#xD3;N SANED ZONA CENTRO, S.L.</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1011&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-1011"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-1011&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-1011">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-789</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 12 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0112/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 28/12/2015 a las 00:00:00] 
+                  </p>
+      <p class="documento">PISO SEXTO DERECHA, SITO EN C/ RIVERA SACRA 33, 6&#xBA; A</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-789&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-789"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-789&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-789">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JV-2015-981
+                    (4 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO MERCANTIL 1 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0536/14</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">Subasta con varios lotes. Lote 1: FINCA 37879 DEL REGISTRO DE LA PROPIEDAD N&#xBA; 3 DE A CORU&#xD1;A Lote 2: Finca de La Coru&#xF1;a N&#xBA; 63395 del Registro de la Propiedad de La Coru&#xF1;a N&#xBA; 2 Lote 3: Finca de La Coru&#xF1;a N&#xBA; 87879 del Registro de la Propiedad de La Coru&#xF1;a N&#xBA; 2 Lote 4: DERECHOS DE CREDITO</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-981&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JV-2015-981"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JV-2015-981&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JV-2015-981">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-794
+                    (2 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 1 - SANTIAGO DE COMPOSTELA</p>
+      <p class="epigrafeDpto">
+                Expediente: 0200/12</p>
+      <p class="epigrafeDpto">
+                  Estado: Finalizada
+                  - [Fecha de conclusi&#xF3;n: 14/12/2015 a las 00:00:00] 
+                  </p>
+      <p class="documento">Subasta con varios lotes. Lote 1: FINCA N&#xBA; 44227 Lote 2: Finca n&#xBA; 16.581</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-794&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-794"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-794&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-794">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2015-650</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 2 - ORDES</p>
+      <p class="epigrafeDpto">
+                Expediente: 0031/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Concluida
+                  - [Fecha de conclusi&#xF3;n: 07/12/2015 a las 00:00:00] 
+                  </p>
+      <p class="documento">VIVIENDA PISO 3&#xBA; LETRA D PLANTA 3&#xBA; CALLE ROSALIA DE CASTRO, SIG&#xDC;EIRO OROSO A CORU&#xD1;A</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-650&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2015-650"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2015-650&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2015-650">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-NE-2017-345513
+                    (13 lotes)
+                  </p>
+      <p class="epigrafeDpto">Notar&#xED;a de Victor Jos&#xE9; Pe&#xF3;n Rama - Coru&#xF1;a (A)</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">Subasta con varios lotes. Lote 1: Ver detalle en contenido subasta Lote 2: Ver detalle en contenido subasta Lote 3: Ver detalle en contenido subasta Lote 4: Ver detalle en contenido subasta Lote 5: Ver detalle en contenido subasta Lote 6: Ver detalle en contenido subasta Lote 7: Ver detalle en contenido subasta Lote 8: Ver detalle en contenido subasta Lote 9: Ver detalle en contenido subasta Lote 10: Ver detalle en contenido subasta Lote 11: Ver detalle en contenido subasta Lote 12: Ver detalle en contenido subasta Lote 13: Ver detalle en contenido subasta</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-NE-2017-345513&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-NE-2017-345513"/>
+        <a href="./detalleSubasta.php?idSub=SUB-NE-2017-345513&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-NE-2017-345513">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2017-77119
+                    (5 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 4 - FERROL</p>
+      <p class="epigrafeDpto">
+                Expediente: 0112/17</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">Subasta con varios lotes. Lote 1: LOCAL COMERCIAL EN FERROL Lote 2: Vivienda planta 1&#xAA; en C/Rubalcava, 34-36 de Ferrol Lote 3: Vivienda planta 2&#xAA; en C/Rubalcava, 34-36 de Ferrol Lote 4: Vivienda planta 3&#xAA; en C/Rubalcava, 34-36 de Ferrol Lote 5: &#xC1;tico en C/Rubalcava, 34-36 de Ferrol</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2017-77119&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2017-77119"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2017-77119&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2017-77119">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2016-25904
+                    (2 lotes)
+                  </p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INSTANCIA 6 - A CORU&#xD1;A</p>
+      <p class="epigrafeDpto">
+                Expediente: 0396/11</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">Subasta con varios lotes. Lote 1: N 10.Vivienda d&#xFA;plex,izquierda, seg&#xFA;n acceso por  escaleras generales.Finca 20.276 casa 2A Lote 2: Municipio de Coir&#xF3;s, Parroquia de Collantres. 1) Labrad&#xED;o, monte y vi&#xF1;a, al sitio DO Mendo</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2016-25904&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2016-25904"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2016-25904&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2016-25904">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2017-68557</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 1 - PADRON</p>
+      <p class="epigrafeDpto">
+                Expediente: 0110/15</p>
+      <p class="epigrafeDpto">
+                  Estado: Cancelada</p>
+      <p class="documento">FINCA HIPOTECADA</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2017-68557&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2017-68557"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2017-68557&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2017-68557">M&#xE1;s...</a>
+      </div>
+    </li>
+    <li class="resultado-busqueda">
+      <p class="epigrafeDpto">
+                  SUBASTA SUB-JA-2018-107990</p>
+      <p class="epigrafeDpto">JUZGADO 1&#xAA; INST E INSTRUCC. 3 - CARBALLO</p>
+      <p class="epigrafeDpto">
+                Expediente: 0097/13</p>
+      <p class="epigrafeDpto">
+                  Estado: Pr&#xF3;xima apertura</p>
+      <p class="documento">vehiculo marca bmw modelo 3.20 matricula 9598DVW  ,.VEHICULO SEMI REMOLQUE MARCA ACM VQ2485 SA3 MATRICULA R9480BBR</p>
+      <div class="enlacesMas">
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2018-107990&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-defecto" title="Subasta SUB-JA-2018-107990"/>
+        <a href="./detalleSubasta.php?idSub=SUB-JA-2018-107990&amp;idBus=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89" class="resultado-busqueda-link-otro" title="Subasta SUB-JA-2018-107990">M&#xE1;s...</a>
+      </div>
+    </li>
+  </ul>
+</div>
+<!-- .listadoResult -->
+<div class="paginar">
+  <ul>
+    <li>
+      <a href="subastas_ava.php">
+        <span class="consulNueva">Nueva b&#xFA;squeda</span>
+      </a>
+    </li>
+    <li>
+      <a href="#top">
+        <span class="pagArriba">Subir</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- .paginar -->
+<div class="paginar2">
+  <ul>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1200-200">
+        <span class="pagAnt"><abbr title="P&#xE1;gina">P&#xE1;g.</abbr> anterior</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-0-200">
+        <span class="pagAntxxx">1</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-200-200">
+        <span class="pagAntxxx">2</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-400-200">
+        <span class="pagAntxxx">3</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-600-200">
+        <span class="pagAntxxx">4</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-800-200">
+        <span class="pagAntxxx">5</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1000-200">
+        <span class="pagAntxxx">6</span>
+      </a>
+    </li>
+    <li>
+      <a href="subastas_ava.php?accion=Mas&amp;id_busqueda=_RGdlaDR2UXgrWWlnV01jMEU1dWtjSEYxemJoYTY5SFVXYmI1SHAwNWJZYml3UmxUYTVHVnI0K28xWGw4dmxnaEtBcU1ZenNEWXl6TjN1cEVhb0Z5V3RiMjJ1S0dycW9UM3EzNDJMT2VGeHJLMVBsZjNXOSt0d3cxTGR1bWhQQW9Fc2QydDE4S3gvODZncFJ4TWdDa0V0YzBHbGMwZG1qMW1PTjdkUDdvRGN2RDkvbjhBcXluTWdHMG01aVg2OXNtQ1ZEalY3VUZFVFQvY2N0eVVKU1NFMG5NcnU5TjRzWDV2akxYblZ4aGN1dmE1UVRlZUVqdmhnRWxIejNFb082ZmZlYkkrRk1EWHhucklXQXNEOU90T2toNzB0MzBTNjBuakJGUnN4Zk54VG89-1200-200">
+        <span class="pagAntxxx">7</span>
+      </a>
+    </li>
+    <li>
+      <span class="fuera">Est&#xE1; usted en la p&#xE1;gina de resultados n&#xFA;mero </span>
+      <span class="current">8</span>
+    </li>
+  </ul>
+</div>
+<!-- .paginar -->
+            <!-- ..................Aqui finaliza la aplicacion............................ -->
+      <!-- FRAG_PIE_APLI -->
+          </div> <!-- /l-contenido -->
+      <!-- /FRAG_PIE_APLI -->
+      <!-- FRAG_PIE_MENU -->
+        </div> <!-- /l-dosColumnasDer o l-unaColumna -->
+      </div> <!-- /l-cuerpo -->
+      <!-- /FRAG_PIE_MENU -->
+      <!-- FRAG_PIE_HTML -->
+    </div> <!-- contenedor -->
+    <div id="pie">
+      <div id="menuPie">
+        <div class="franjaMenu">
+          <ul>
+            <li><a href="https://subastas.boe.es/textoPolitica.php" target="_blank" title="Abre nueva ventana">Acerca del Portal</a></li>
+          </ul>
+        </div> <!-- .franjaMenu -->
+      </div> <!-- #menuPie -->
+      <div class="direccionPie">
+        <p>Agencia Estatal <span class="mayus">Bolet�n Oficial del Estado</span></p>
+        <p><abbr title="Avenida">Avda.</abbr> de Manoteras, 54 - 28050 Madrid<!--  - <abbr title="Tel�fono">Tel</abbr>.: (+34) 91 111 4000 --></p>
+      </div> <!-- .direccionPie -->
+    </div><!-- pie -->
+  </body>
+</html>

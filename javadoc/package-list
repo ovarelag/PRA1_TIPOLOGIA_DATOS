@@ -1,0 +1,7 @@
+com.ovarelag.uoc.subastas.gob.scrapper.main
+com.ovarelag.uoc.subastas.gob.scrapper.model
+com.ovarelag.uoc.subastas.gob.scrapper.model.skeleton
+com.ovarelag.uoc.subastas.gob.scrapper.service.datasetcompleto
+com.ovarelag.uoc.subastas.gob.scrapper.service.datasetreducido
+com.ovarelag.uoc.subastas.gob.scrapper.service.test
+com.ovarelag.uoc.subastas.gob.scrapper.tools
